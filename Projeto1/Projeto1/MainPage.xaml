@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto1.Projeto1"
+             Title="CALCULADORA FATEC" 
+             BackgroundImageSource="fundo_4"
+             >
+
+
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="Center">
+            
+            <Label 
+                Text="Digite a sua nota da P1." 
+                FontSize="20" 
+                Padding="30,0,30,0"
+                TextColor="White"
+                HorizontalOptions="Center"
+            />
+
+            <Entry
+                x:Name = "txt_Nota_P1"
+                Keyboard="Numeric"
+                Margin="70,0,70,0"
+                ClearButtonVisibility="WhileEditing"
+                TextColor="White"
+                CursorPosition="0"
+            />
+
+            <Label 
+                Text="Digite a sua nota da P2." 
+                FontSize="20" 
+                Padding="30,0,30,0"
+                TextColor="White"
+                HorizontalOptions="Center"
+                
+            />
+
+            <Entry
+                x:Name = "txt_Nota_P2"
+                Keyboard="Numeric" 
+                Margin="70,0,70,0"
+                ClearButtonVisibility="WhileEditing"
+                TextColor="White"
+                
+            />
+
+            <Label 
+                Text="Digite a sua nota de trabalho." 
+                FontSize="20" 
+                Padding="30,0,30,0"
+                TextColor="White"
+                HorizontalOptions="Center"
+            />
+
+            <Entry
+                x:Name = "txt_Nota_AT"
+                Keyboard="Numeric"
+                Margin="70,0,70,0"
+                ClearButtonVisibility="WhileEditing"
+                TextColor="White"
+             />
+
+            <Label
+                Text=""
+                FontSize="16"
+                x:Name="lbl_Mensagem"
+                TextColor="Red"
+                HorizontalOptions="Center"
+             />
+
+
+            <Button 
+                Text="CALCULAR" 
+                Clicked="CALCULARP3"
+                FontSize="15"
+                Margin="80,20,80,0"
+                CornerRadius="50"
+            />
+
+            <Button 
+                Text="Limpar" 
+                Clicked="bt_limpar"
+                FontSize="15"
+                Margin="80,20,80,0"
+                CornerRadius="50"
+            />
+
+            <Label
+                Text=""
+                FontSize="18"
+                x:Name="lbl_Resultado1"
+                TextColor="White"
+                HorizontalOptions="Center"
+            />
+            
+            <Label
+                Text=""
+                FontSize="17"
+                x:Name="lbl_Resultado2"
+                HorizontalOptions="Center" 
+            />
+            
+
+            
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
